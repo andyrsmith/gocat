@@ -6,7 +6,7 @@ Learning Go, os I made the program Cat using Go.
 
 First set up Go if you haven't already.
 
-(Go install instructions)[https://go.dev/doc/install]
+[Go install instructions](https://go.dev/doc/install)
 
 Run the following command to compile the code. 
 
