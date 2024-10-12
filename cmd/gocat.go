@@ -8,11 +8,19 @@ import (
 //error handling if no args
 //error handling if no file exists
 func main() {
+
+    if len(os.Args) <= 1 {
+        fmt.Println("No arguments provided!")
+        return
+    }
+
     filename := os.Args[1]
+
     data, err := os.Open(filename)
 
     if err != nil{
-        panic(err)
+        fmt.Println("No such file exists!")
+        return
     }
     
     fileScanner := bufio.NewScanner(data)
